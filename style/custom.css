@@ -1,0 +1,57 @@
+/* Custom CSS
+-------------------------*/
+body {
+    padding-top: 0px;
+}
+
+#page-header-main {
+    margin-bottom: 0.75em;
+    border-bottom: 2px solid #ddd;
+}
+
+#page-header-menu {
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#header-custom-menu ul {
+    margin-bottom: 0px;
+}
+
+.dropdown-menu {
+    right: 0px;
+    left: auto;
+}
+
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl a.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.block {
+  border-color: [[setting:themecolor]];
+  padding-top: 0px;
+  background-color: #fcfcfc;
+}
+
+.block .header h2 {
+  color: #000000;
+  border-color: #ddd;
+  background-color: [[setting:themecolor]];
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
