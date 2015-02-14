@@ -41,7 +41,7 @@ echo $OUTPUT->doctype() ?>
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
-        <div id="page-header-main">
+        <div id="page-header-main" class="clearfix">
             <div id="page-headings" class="pull-left">
                 <?php echo $html->heading; ?>
             </div>
@@ -50,7 +50,6 @@ echo $OUTPUT->doctype() ?>
                     <?php echo $OUTPUT->login_info() ?>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
         
         <div id="page-navbar" class="clearfix">
