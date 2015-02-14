@@ -34,7 +34,7 @@ $plugin->requires  = 2014050800;
 $plugin->cron      = 0;
 $plugin->component = 'theme_standard_clean';
 $plugin->maturity  = MATURITY_BETA;
-$plugin->release   = 'v2.8';
+$plugin->release   = 'for moodle v2.8';
 
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2014050800,

@@ -17,8 +17,8 @@
 /**
  * The maintenance layout.
  *
- * @package   theme_clean
- * @copyright 2013 Moodle, moodle.org
+ * @package   theme_standard_clean
+ * @copyright udagawa mitsuru
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -41,11 +41,10 @@ echo $OUTPUT->doctype() ?>
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
-        <div id="page-header-main">
+        <div id="page-header-main" class="clearfix">
             <div id="page-headings" class="pull-left">
                 <?php echo $html->heading; ?>
             </div>
-            <div class="clearfix"></div>
         </div>
     </header>
 

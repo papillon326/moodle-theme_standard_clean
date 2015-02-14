@@ -17,8 +17,8 @@
 /**
  * The secure layout.
  *
- * @package   theme_clean
- * @copyright 2013 Moodle, moodle.org
+ * @package   theme_standard_clean
+ * @copyright udagawa mitsuru
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
