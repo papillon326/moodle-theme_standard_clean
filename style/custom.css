@@ -55,3 +55,17 @@ a.logo {
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
+
+/* Printing Settings
+ * -------------------------*/
+@media print {
+    #page {
+        width: 100%;
+    }
+        
+    body.has_dock div#dock,
+    #block-region-side-pre,
+    #block-region-side-post,
+        display: none;
+    }
+}
