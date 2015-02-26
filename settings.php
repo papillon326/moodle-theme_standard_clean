@@ -32,15 +32,35 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
     
-    // Main theme background colour setting. 
-    $name = 'theme_standard_clean/themecolor'; 
-    $visiblename = get_string('themecolor', 'theme_standard_clean'); 
-    $description = get_string('themecolordesc', 'theme_standard_clean'); 
+    // Main theme background color setting. 
+    $name = 'theme_standard_clean/themebgcolor'; 
+    $visiblename = get_string('themebgcolor', 'theme_standard_clean'); 
+    $description = get_string('themebgcolordesc', 'theme_standard_clean'); 
     $defaultsetting = '#e1e1df'; 
     $previewconfig = null; 
     $setting = new admin_setting_configcolourpicker($name, $visiblename, $description, $defaultsetting, $previewconfig); 
     $setting->set_updatedcallback('theme_reset_all_caches'); 
     $settings->add($setting); 
+    
+    // Main theme font color setting. 
+    $name = 'theme_standard_clean/themefontcolor'; 
+    $visiblename = get_string('themefontcolor', 'theme_standard_clean'); 
+    $description = get_string('themefontcolordesc', 'theme_standard_clean'); 
+    $defaultsetting = '#000000'; 
+    $previewconfig = null; 
+    $setting = new admin_setting_configcolourpicker($name, $visiblename, $description, $defaultsetting, $previewconfig); 
+    $setting->set_updatedcallback('theme_reset_all_caches'); 
+    $settings->add($setting);
+    
+    // Main theme link color setting. 
+    $name = 'theme_standard_clean/themelinkcolor'; 
+    $visiblename = get_string('themelinkcolor', 'theme_standard_clean'); 
+    $description = get_string('themelinkcolordesc', 'theme_standard_clean'); 
+    $defaultsetting = '#0070a8'; 
+    $previewconfig = null; 
+    $setting = new admin_setting_configcolourpicker($name, $visiblename, $description, $defaultsetting, $previewconfig); 
+    $setting->set_updatedcallback('theme_reset_all_caches'); 
+    $settings->add($setting);
     
     // Logo file setting.
     $name = 'theme_standard_clean/logo';

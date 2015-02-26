@@ -51,13 +51,27 @@ function theme_standard_clean_process_css($css, $theme) {
     }
     $css = theme_standard_clean_set_customcss($css, $customcss);
 
-    if (!empty($theme->settings->themecolor)) {
-        $themecolor = $theme->settings->themecolor;
+    if (!empty($theme->settings->themebgcolor)) {
+        $color = $theme->settings->themebgcolor;
     } else {
-        $themecolor = null;
+        $color = '#e1e1df';
     }
-    $css = theme_standard_clean_set_themecolor($css, $themecolor);
+    $css = theme_standard_clean_set_color($css, '[[setting:themebgcolor]]', $color);
 
+    if (!empty($theme->settings->themefontcolor)) {
+        $color = $theme->settings->themefontcolor;
+    } else {
+        $color = '#000000';
+    }
+    $css = theme_standard_clean_set_color($css, '[[setting:themefontcolor]]', $color);
+
+    if (!empty($theme->settings->themelinkcolor)) {
+        $color = $theme->settings->themelinkcolor;
+    } else {
+        $color = '#0070a8';
+    }
+    $css = theme_standard_clean_set_color($css, '[[setting:themelinkcolor]]', $color);
+    
     return $css;
 }
 
@@ -80,14 +94,12 @@ function theme_standard_clean_set_logo($css, $logo) {
     return $css;
 }
 
-function theme_standard_clean_set_themecolor($css, $themecolor) {
-    $tag = '[[setting:themecolor]]';
-    $replacement = $themecolor;
-        if (is_null($replacement)) {
-        $replacement = '#e1e1df';
+function theme_standard_clean_set_color($css, $tag, $color) {
+    if (is_null($tag) || is_null($color)) {
+        return $css;
     }
-        
-    $css = str_replace($tag, $replacement, $css);
+    
+    $css = str_replace($tag, $color, $css);
     return $css;
 }
 

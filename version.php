@@ -29,7 +29,7 @@
  */
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2015021200;
+$plugin->version   = 2015021201;
 $plugin->requires  = 2014050800;
 $plugin->cron      = 0;
 $plugin->component = 'theme_standard_clean';

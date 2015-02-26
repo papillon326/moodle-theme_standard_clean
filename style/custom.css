@@ -41,16 +41,25 @@ a.logo {
 }
 
 .block {
-  border-color: [[setting:themecolor]];
+  border-color: [[setting:themebgcolor]];
   padding-top: 0px;
   background-color: #fcfcfc;
 }
 
 .block .header h2 {
-  color: #000000;
+  color: [[setting:themefontcolor]];
   border-color: #ddd;
-  background-color: [[setting:themecolor]];
+  background-color: [[setting:themebgcolor]];
 }
+
+table .header {
+  color: [[setting:themefontcolor]];
+  background-color: [[setting:themebgcolor]];
+ } 
+ 
+table .header a {
+  color: [[setting:themelinkcolor]];
+ } 
 
 /* Custom CSS Settings
 -------------------------*/
