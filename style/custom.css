@@ -52,7 +52,8 @@ a.logo {
   background-color: [[setting:themebgcolor]];
 }
 
-table .header {
+table .header,
+table .heading {
   color: [[setting:themefontcolor]];
   background-color: [[setting:themebgcolor]];
  } 
@@ -60,6 +61,39 @@ table .header {
 table .header a {
   color: [[setting:themelinkcolor]];
  } 
+
+table#explaincaps tbody>tr:nth-child(2n+3)>td,
+table#defineroletable tbody>tr:nth-child(2n+3)>td,
+table.grading-report tbody>tr:nth-child(2n+3)>td,
+table#listdirectories tbody>tr:nth-child(2n+3)>td,
+table.rolecaps tbody>tr:nth-child(2n+3)>td,
+table.userenrolment tbody>tr:nth-child(2n+3)>td,
+table#form tbody>tr:nth-child(2n+3)>td,
+form#movecourses table tbody>tr:nth-child(2n+3)>td,
+#page-admin-course-index .editcourse tbody>tr:nth-child(2n+3)>td,
+.forumheaderlist tbody>tr:nth-child(2n+3)>td,
+table.flexible tbody>tr:nth-child(2n+3)>td,
+.generaltable tbody>tr:nth-child(2n+3)>td,
+table#explaincaps tbody>tr:nth-child(2n+3)>th,
+table#defineroletable tbody>tr:nth-child(2n+3)>th,
+able.grading-report tbody>tr:nth-child(2n+3)>th,
+table#listdirectories tbody>tr:nth-child(2n+3)>th,
+table.rolecaps tbody>tr:nth-child(2n+3)>th,
+table.userenrolment tbody>tr:nth-child(2n+3)>th,
+table#form tbody>tr:nth-child(2n+3)>th,
+form#movecourses table tbody>tr:nth-child(2n+3)>th,
+#page-admin-course-index .editcourse tbody>tr:nth-child(2n+3)>th,
+.forumheaderlist tbody>tr:nth-child(2n+3)>th,
+table.flexible tbody>tr:nth-child(2n+3)>th,
+.generaltable tbody>tr:nth-child(2n+3)>th
+{
+  background-color: #f9f9f9;
+}
+
+/* fix question feedback display inline */
+.que.match .feedback .rightanswer p {
+  display: block;
+}
 
 /* Custom CSS Settings
 -------------------------*/
