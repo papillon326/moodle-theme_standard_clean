@@ -62,32 +62,78 @@ table .header a {
   color: [[setting:themelinkcolor]];
  } 
 
-table#explaincaps tbody>tr:nth-child(2n+3)>td,
-table#defineroletable tbody>tr:nth-child(2n+3)>td,
-table.grading-report tbody>tr:nth-child(2n+3)>td,
-table#listdirectories tbody>tr:nth-child(2n+3)>td,
-table.rolecaps tbody>tr:nth-child(2n+3)>td,
-table.userenrolment tbody>tr:nth-child(2n+3)>td,
-table#form tbody>tr:nth-child(2n+3)>td,
-form#movecourses table tbody>tr:nth-child(2n+3)>td,
-#page-admin-course-index .editcourse tbody>tr:nth-child(2n+3)>td,
-.forumheaderlist tbody>tr:nth-child(2n+3)>td,
-table.flexible tbody>tr:nth-child(2n+3)>td,
-.generaltable tbody>tr:nth-child(2n+3)>td,
-table#explaincaps tbody>tr:nth-child(2n+3)>th,
-table#defineroletable tbody>tr:nth-child(2n+3)>th,
-able.grading-report tbody>tr:nth-child(2n+3)>th,
-table#listdirectories tbody>tr:nth-child(2n+3)>th,
-table.rolecaps tbody>tr:nth-child(2n+3)>th,
-table.userenrolment tbody>tr:nth-child(2n+3)>th,
-table#form tbody>tr:nth-child(2n+3)>th,
-form#movecourses table tbody>tr:nth-child(2n+3)>th,
-#page-admin-course-index .editcourse tbody>tr:nth-child(2n+3)>th,
-.forumheaderlist tbody>tr:nth-child(2n+3)>th,
-table.flexible tbody>tr:nth-child(2n+3)>th,
-.generaltable tbody>tr:nth-child(2n+3)>th
+table#explaincaps tbody>tr:nth-child(2n+1)>td, 
+table#defineroletable tbody>tr:nth-child(2n+1)>td,
+table.grading-report tbody>tr:nth-child(2n+1)>td,
+table#listdirectories tbody>tr:nth-child(2n+1)>td,
+table.rolecaps tbody>tr:nth-child(2n+1)>td,
+table.userenrolment tbody>tr:nth-child(2n+1)>td,
+table#form tbody>tr:nth-child(2n+1)>td,
+form#movecourses table tbody>tr:nth-child(2n+1)>td,
+#page-admin-course-index .editcourse tbody>tr:nth-child(2n+1)>td,
+.forumheaderlist tbody>tr:nth-child(2n+1)>td,
+table.flexible tbody>tr:nth-child(2n+1)>td,
+.generaltable tbody>tr:nth-child(2n+1)>td,
+table#explaincaps tbody>tr:nth-child(2n+1)>th,
+table#defineroletable tbody>tr:nth-child(2n+1)>th,
+able.grading-report tbody>tr:nth-child(2n+1)>th,
+table#listdirectories tbody>tr:nth-child(2n+1)>th,
+table.rolecaps tbody>tr:nth-child(2n+1)>th,
+table.userenrolment tbody>tr:nth-child(2n+1)>th,
+table#form tbody>tr:nth-child(2n+1)>th,
+form#movecourses table tbody>tr:nth-child(2n+1)>th,
+#page-admin-course-index .editcourse tbody>tr:nth-child(2n+1)>th,
+.forumheaderlist tbody>tr:nth-child(2n+1)>th,
+table.flexible tbody>tr:nth-child(2n+1)>th,
+.generaltable tbody>tr:nth-child(2n+1)>th
 {
   background-color: #f9f9f9;
+}
+
+table#explaincaps tbody>tr>td.header, 
+table#defineroletable tbody>tr>td.header,
+table.grading-report tbody>tr>td.header,
+table#listdirectories tbody>tr>td.header,
+table.rolecaps tbody>tr>td.header,
+table.userenrolment tbody>tr>td.header,
+table#form tbody>tr>td.header,
+form#movecourses table tbody>tr>td.header,
+#page-admin-course-index .editcourse tbody>tr>td.header,
+.forumheaderlist tbody>tr>td.header,
+table.flexible tbody>tr>td.header,
+.generaltable tbody>tr>td.header,
+table#explaincaps tbody>tr>th.header,
+table#defineroletable tbody>tr>th.header,
+table.grading-report tbody>tr>th.header,
+table#listdirectories tbody>tr>th.header,
+table.rolecaps tbody>tr>th.header,
+table.userenrolment tbody>tr>th.header,
+table#form tbody>tr>th.header,
+form#movecourses table tbody>tr>th.header,
+#page-admin-course-index .editcourse tbody>tr>th.header,
+.forumheaderlist tbody>tr>th.header,
+table.flexible tbody>tr>th.header,
+.generaltable tbody>tr>th.header
+{
+  background-color: [[setting:themebgcolor]];
+}
+
+.path-grade-report .gradeparent tr.heading .cell.header {
+  background-color: [[setting:themebgcolor]];
+}
+
+.path-grade-report .gradeparent tr:not(.heading) .cell.header {
+  color: #000000;
+}
+
+
+/* permission table */
+table#permissions tbody tr:nth-child(2n+1) {
+  background-color: #f9f9f9;
+}
+table#permissions tbody tr:hover > td.header,
+table#permissions tbody tr:hover > th.header {
+  background-color: [[setting:themebgcolor]];
 }
 
 /* fix question feedback display inline */
