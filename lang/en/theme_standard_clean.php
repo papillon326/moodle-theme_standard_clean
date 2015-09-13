@@ -56,3 +56,9 @@ $string['region-side-pre'] = 'Left';
 $string['themecolor'] = 'Theme color';
 $string['themecolordesc'] = 'Setting Themecolor';
 
+$string['themebgcolor'] = 'Theme background color';
+$string['themebgcolordesc'] = 'Setting Theme background color';
+$string['themefontcolor'] = 'Theme font color';
+$string['themefontcolordesc'] = 'Setting Theme font color';
+$string['themelinkcolor'] = 'Theme link color';
+$string['themelinkcolordesc'] = 'Setting Theme link color';
