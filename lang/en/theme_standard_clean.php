@@ -55,7 +55,6 @@ $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['themecolor'] = 'Theme color';
 $string['themecolordesc'] = 'Setting Themecolor';
-
 $string['themebgcolor'] = 'Theme background color';
 $string['themebgcolordesc'] = 'Setting Theme background color';
 $string['themefontcolor'] = 'Theme font color';
