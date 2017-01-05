@@ -57,9 +57,13 @@ table .heading {
   color: [[setting:themefontcolor]];
   background-color: [[setting:themebgcolor]];
  } 
- 
+
 table .header a {
   color: [[setting:themelinkcolor]];
+ } 
+
+table .heading .header a {
+  color: [[setting:themefontcolor]];
  } 
 
 table#explaincaps tbody>tr:nth-child(2n+1)>td, 
